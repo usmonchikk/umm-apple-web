@@ -41,6 +41,14 @@ img{
   max-width: 100%;
   height: auto;
 }
+
+*:focus{
+  outline: 2px dashed var(--primary);
+  outline-offset: 2px;
+}
+
+
+
 .container{
   width: 100%;
   max-width: 1100px;
