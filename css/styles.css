@@ -1,6 +1,7 @@
 /* Custom Property */
 :root{
   --primary:#ea625c;
+  --primary-dark: #c9514c;
   --text-color:#333;
 }
 
@@ -57,6 +58,32 @@ img{
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/* Buttoon */
+.button{
+  display: inline-block;
+  padding: 12px 38px;
+  border:0;
+  background-color:var(--primary);
+  color:#fff;
+  font-size: 18;
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3 ease;
+}
+
+.button:hover{
+  background-color:var(--primary-dark);
+}
+
+.button:active{
+  opacity: 0.6;
+}
+
+
 
 /* MAinContent */
 .main-content{
@@ -138,4 +165,34 @@ transition: border-bottom 0.3s ease;
   padding-bottom: 6px;
   border: 0;
   border-bottom: 1px solid #333;
+}
+
+.hero{
+padding-top: 140px;
+padding-bottom: 185px;
+border-bottom:2px solid #ddd;
+background-image: url("../img/content-block-md-applewatch-lockup_2x.png");
+background-repeat: no-repeat;
+background-position: left calc(50% + 350px) center;
+}
+
+.lead-cta{
+  width: 100%;
+  max-width: 490px;
+}
+
+.lead-cta-heading{
+margin-top: 0;
+margin-bottom: 30px;
+font-size: 50px;
+line-height: 1.2;
+color:#000;
+}
+
+.lead-cta-text{
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color:#777;
 }
