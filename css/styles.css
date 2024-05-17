@@ -63,8 +63,9 @@ img{
 /* Buttoon */
 .button{
   display: inline-block;
+  min-width: 260px;
   padding: 12px 38px;
-  border:0;
+  border-radius:10px;
   background-color:var(--primary);
   color:#fff;
   font-size: 18;
@@ -72,6 +73,7 @@ img{
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   transition: background-color 0.3 ease;
 }
 
@@ -216,12 +218,21 @@ line-height: 1.2;
 color:#000;
 }
 
+.lead-cta-white .lead-cta-heading{
+  color:#fff;
+}
+
 .lead-cta-text{
   padding-left: 37px;
   border-left: 3px solid #888;
   margin-top: 0;
   margin-bottom: 30px;
   color:#777;
+}
+
+.lead-cta-white .lead-cta-text{
+  border-color: #fff;
+  color:#fff;
 }
 
 
@@ -274,4 +285,39 @@ color:#000;
   background-color:#ddd;
   box-shadow: 16px 0 0 0 #ddd,
   32px 0 0 0 #ddd;
+}
+
+/* Promo */
+
+.promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.promo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.promo-img {
+  width: 400px;
+  border-radius: 10px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Runnners */
+
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url("../img/8082c9ce6a6f4f6094a6ca2a9cb72d1e.webp");
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.runners-lead-cta {
+  margin-left: auto;
 }
